@@ -2,10 +2,10 @@ import { INITIAL_PRODUCTS, INITIAL_SETTINGS } from '../data/initialProducts';
 import { supabase, isSupabaseConfigured } from './supabase';
 
 const STORAGE_KEYS = {
-  PRODUCTS: 'feira_products_v2',
-  SETTINGS: 'feira_settings_v2',
-  INTERESTS: 'feira_interests_v2',
-  ADMIN_SESSION: 'feira_admin_session_v2',
+  PRODUCTS: 'feira_products_v3',
+  SETTINGS: 'feira_settings_v3',
+  INTERESTS: 'feira_interests_v3',
+  ADMIN_SESSION: 'feira_admin_session_v3',
 };
 
 // ----------------- LOCAL STORAGE HELPERS -----------------
