@@ -28,7 +28,7 @@ export function Header({
             <div>
               <div className="flex items-center gap-2">
                 <span className="text-xl font-semibold tracking-tight text-stone-900">
-                  {settings.siteTitle || 'Desapego da Casa'}
+                  {settings.siteTitle || 'Feira do Desapego'}
                 </span>
                 {isAdmin && (
                   <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium bg-amber-100 text-amber-800 border border-amber-300">

@@ -19,7 +19,7 @@ export function Footer({ settings, isAdmin, onOpenAdminLogin, onOpenAdminPanel }
                 <Armchair className="w-5 h-5" />
               </div>
               <span className="text-xl font-bold tracking-tight text-white font-serif">
-                {settings.siteTitle || 'Desapego da Casa'}
+                {settings.siteTitle || 'Feira do Desapego'}
               </span>
             </div>
             <p className="text-xs text-stone-400 leading-relaxed max-w-sm">

@@ -10,7 +10,7 @@ export const INITIAL_PRODUCTS = [
     voltage: null,
     brand: 'Tok&Stok',
     description: 'Sofá extremamente confortável, revestimento em linho impermeabilizado bege claro. Assento com molas ensacadas e espuma D33. Encosto reclinável em 4 estágios. Sem rasgos, sem manchas de animais, sempre usado com capa de proteção.',
-    pickupLocation: 'Retirada no bairro Pinheiros (prédio com elevador de carga)',
+    pickupLocation: 'Retirada em Petrópolis - Centro (prédio com elevador de carga)',
     status: 'disponivel',
     featured: true,
     images: [
@@ -92,7 +92,7 @@ export const INITIAL_PRODUCTS = [
     voltage: null,
     brand: 'Westwing',
     description: 'Poltrona com pés em madeira maciça jequitibá tom mel e estofamento em tecido bouclé off-white, super acolhedora e moderna. Acompanha puff combinando para apoio dos pés. Peça de design contemporâneo.',
-    pickupLocation: 'Retirada em Pinheiros',
+    pickupLocation: 'Retirada em Petrópolis - Centro',
     status: 'disponivel',
     featured: false,
     images: [
@@ -143,12 +143,12 @@ export const INITIAL_PRODUCTS = [
 ];
 
 export const INITIAL_SETTINGS = {
-  siteTitle: 'Desapego da Casa',
+  siteTitle: 'Feira do Desapego',
   siteSubtitle: 'Móveis, eletrodomésticos e utilidades em excelente estado por motivo de mudança / renovação.',
   sellerName: 'Morador',
-  whatsappNumber: '5511999999999', // Default formatted for WhatsApp API (Country + DDD + Number)
-  whatsappDisplay: '(11) 99999-9999',
-  cityNeighborhood: 'São Paulo - SP (Pinheiros)',
+  whatsappNumber: '5524988041551', // Default formatted for WhatsApp API (Country + DDD + Number)
+  whatsappDisplay: '(24) 98804-1551',
+  cityNeighborhood: 'Petrópolis - RJ (Centro)',
   paymentMethods: 'Pix ou Dinheiro na retirada',
   adminPin: 'admin123',
 };

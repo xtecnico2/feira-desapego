@@ -2,10 +2,10 @@ import { INITIAL_PRODUCTS, INITIAL_SETTINGS } from '../data/initialProducts';
 import { supabase, isSupabaseConfigured } from './supabase';
 
 const STORAGE_KEYS = {
-  PRODUCTS: 'desapego_products_v1',
-  SETTINGS: 'desapego_settings_v1',
-  INTERESTS: 'desapego_interests_v1',
-  ADMIN_SESSION: 'desapego_admin_session_v1',
+  PRODUCTS: 'feira_products_v2',
+  SETTINGS: 'feira_settings_v2',
+  INTERESTS: 'feira_interests_v2',
+  ADMIN_SESSION: 'feira_admin_session_v2',
 };
 
 // ----------------- LOCAL STORAGE HELPERS -----------------
@@ -264,10 +264,22 @@ export async function deleteInterest(interestId) {
 // ----------------- SETTINGS SERVICE -----------------
 
 export function getSettings() {
-  const local = getLocalData(STORAGE_KEYS.SETTINGS, null);
+  let local = getLocalData(STORAGE_KEYS.SETTINGS, null);
   if (!local) {
-    setLocalData(STORAGE_KEYS.SETTINGS, INITIAL_SETTINGS);
-    return INITIAL_SETTINGS;
+    const old = getLocalData('desapego_settings_v1', null);
+    if (old) {
+      local = {
+        ...INITIAL_SETTINGS,
+        ...old,
+        siteTitle: old.siteTitle === 'Desapego da Casa' ? INITIAL_SETTINGS.siteTitle : old.siteTitle,
+        cityNeighborhood: old.cityNeighborhood?.includes('Pinheiros') ? INITIAL_SETTINGS.cityNeighborhood : old.cityNeighborhood,
+        whatsappNumber: old.whatsappNumber === '5511999999999' ? INITIAL_SETTINGS.whatsappNumber : old.whatsappNumber,
+        whatsappDisplay: old.whatsappDisplay === '(11) 99999-9999' ? INITIAL_SETTINGS.whatsappDisplay : old.whatsappDisplay,
+      };
+    } else {
+      local = INITIAL_SETTINGS;
+    }
+    setLocalData(STORAGE_KEYS.SETTINGS, local);
   }
   return { ...INITIAL_SETTINGS, ...local };
 }

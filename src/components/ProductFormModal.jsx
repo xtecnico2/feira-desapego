@@ -474,7 +474,7 @@ export function ProductFormModal({ product, onClose, onSave }) {
                 name="pickupLocation"
                 value={formData.pickupLocation}
                 onChange={handleChange}
-                placeholder="Ex: Retirada no bairro Pinheiros (prédio com elevador de carga). Desmontagem por conta do comprador."
+                placeholder="Ex: Retirada em Petrópolis - Centro (prédio com elevador de carga). Desmontagem por conta do comprador."
                 className="w-full px-4 py-2.5 rounded-xl bg-stone-50 border border-stone-200 text-sm text-stone-900 focus:bg-white focus:outline-none focus:border-amber-600"
               />
             </div>

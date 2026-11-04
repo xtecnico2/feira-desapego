@@ -1,6 +1,6 @@
-# 🛋️ Desapego da Casa - Venda de Móveis e Eletrodomésticos
+# 🛋️ Feira do Desapego - Venda de Móveis e Eletrodomésticos
 
-Um site moderno, elegante e responsivo desenvolvido especialmente para vender móveis, eletrodomésticos e utilidades da sua casa.
+Um site moderno, elegante e responsivo desenvolvido especialmente para a **Feira do Desapego** em **Petrópolis - RJ (Centro)**, com foco na venda de móveis, eletrodomésticos e utilidades.
 
 Projetado para ser **fácil de usar**, com **painel de administração protegido por senha**, suporte a **múltiplas fotos por item**, **botões de interesse integrados ao WhatsApp** e **100% compatível com hospedagens gratuitas** (Vercel, Netlify, Cloudflare Pages, etc.).
 

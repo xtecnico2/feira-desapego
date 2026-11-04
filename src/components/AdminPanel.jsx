@@ -424,7 +424,7 @@ export function AdminPanel({
                   type="text"
                   value={settingsForm.siteTitle}
                   onChange={(e) => setSettingsForm({ ...settingsForm, siteTitle: e.target.value })}
-                  placeholder="Ex: Desapego da Casa - Família Souza"
+                  placeholder="Ex: Feira do Desapego"
                   className="w-full px-4 py-2.5 rounded-xl bg-stone-50 border border-stone-200 text-sm text-stone-900 focus:bg-white focus:outline-none focus:border-amber-600"
                 />
               </div>
@@ -451,11 +451,11 @@ export function AdminPanel({
                     type="text"
                     value={settingsForm.whatsappNumber}
                     onChange={(e) => setSettingsForm({ ...settingsForm, whatsappNumber: e.target.value })}
-                    placeholder="Ex: 5511999999999"
+                    placeholder="Ex: 5524988041551"
                     className="w-full px-4 py-2.5 rounded-xl bg-stone-50 border border-stone-200 text-sm text-stone-900 focus:bg-white focus:outline-none focus:border-amber-600"
                   />
                   <span className="text-[10px] text-stone-400 mt-0.5 block">
-                    Formato com código do país e DDD (Ex: 5511999999999)
+                    Formato com código do país e DDD (Ex: 5524988041551)
                   </span>
                 </div>
 
@@ -467,7 +467,7 @@ export function AdminPanel({
                     type="text"
                     value={settingsForm.cityNeighborhood}
                     onChange={(e) => setSettingsForm({ ...settingsForm, cityNeighborhood: e.target.value })}
-                    placeholder="Ex: São Paulo - SP (Pinheiros)"
+                    placeholder="Ex: Petrópolis - RJ (Centro)"
                     className="w-full px-4 py-2.5 rounded-xl bg-stone-50 border border-stone-200 text-sm text-stone-900 focus:bg-white focus:outline-none focus:border-amber-600"
                   />
                 </div>
