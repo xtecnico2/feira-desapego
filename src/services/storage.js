@@ -58,6 +58,31 @@ export async function fetchProducts() {
           images: Array.isArray(item.images) ? item.images : JSON.parse(item.images || '[]'),
           createdAt: item.created_at,
         }));
+      } else if (data && data.length === 0 && INITIAL_PRODUCTS.length > 0) {
+        // Auto-seed Supabase with current initial products
+        try {
+          const payload = INITIAL_PRODUCTS.map((p) => ({
+            id: p.id,
+            title: p.title,
+            category: p.category,
+            price: Number(p.price) || 0,
+            original_price: p.originalPrice ? Number(p.originalPrice) : null,
+            condition: p.condition,
+            dimensions: p.dimensions,
+            voltage: p.voltage,
+            brand: p.brand,
+            description: p.description,
+            pickup_location: p.pickupLocation,
+            status: p.status || 'disponivel',
+            featured: Boolean(p.featured),
+            images: p.images || [],
+            created_at: p.createdAt || new Date().toISOString(),
+          }));
+          await supabase.from('products').upsert(payload);
+          return INITIAL_PRODUCTS;
+        } catch (seedErr) {
+          console.warn('Erro ao auto-popular Supabase:', seedErr);
+        }
       }
     } catch (err) {
       console.warn('Falha ao buscar produtos do Supabase, usando local:', err);
