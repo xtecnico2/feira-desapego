@@ -7,7 +7,7 @@ export function AdminLoginModal({ onClose, onLoginSuccess, currentPin }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const targetPin = currentPin || 'admin123';
+    const targetPin = currentPin || '140510AdminMoveis';
 
     if (pin.trim() === targetPin) {
       onLoginSuccess();
@@ -67,7 +67,7 @@ export function AdminLoginModal({ onClose, onLoginSuccess, currentPin }) {
             {error && (
               <div className="flex items-center gap-1.5 text-xs text-rose-600 mt-2">
                 <AlertCircle className="w-4 h-4 shrink-0" />
-                <span>Senha incorreta. (Senha padrão: admin123)</span>
+                <span>Senha incorreta. Verifique a senha e tente novamente.</span>
               </div>
             )}
           </div>

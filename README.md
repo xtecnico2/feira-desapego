@@ -10,7 +10,7 @@ Projetado para ser **fácil de usar**, com **painel de administração protegido
 
 - **Visual Elegante & Minimalista**: Paleta acolhedora inspirada em lojas de design de interiores, tipografia refinada e cards com acabamento premium.
 - **Painel Administrativo Restrito**:
-  - Acesso protegido por PIN/senha (padrão: `admin123`, alterável no painel).
+  - Acesso protegido por PIN/senha (padrão configurado: `140510AdminMoveis`, alterável no painel).
   - Cadastro, edição e exclusão de itens.
   - Alteração instantânea de status: **Disponível**, **Reservado** ou **Vendido**.
 - **Múltiplas Fotos com Otimização**:
@@ -49,7 +49,7 @@ Abra o navegador no endereço exibido (geralmente `http://localhost:5173`).
 ## 🔐 Como Acessar a Área de Administrador
 
 1. No cabeçalho (ou no rodapé), clique em **Admin** (ícone de cadeado).
-2. Digite o PIN de administrador padrão: `admin123`.
+2. Digite a sua senha de administrador: `140510AdminMoveis`.
 3. Pronto! O botão **"Painel Admin"** aparecerá no topo.
 4. No painel você pode:
    - Cadastrar novos itens no botão **"+ Novo Item para Venda"**.

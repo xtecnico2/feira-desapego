@@ -150,5 +150,5 @@ export const INITIAL_SETTINGS = {
   whatsappDisplay: '(24) 98804-1551',
   cityNeighborhood: 'Petrópolis - RJ (Centro)',
   paymentMethods: 'Pix ou Dinheiro na retirada',
-  adminPin: 'admin123',
+  adminPin: '140510AdminMoveis',
 };

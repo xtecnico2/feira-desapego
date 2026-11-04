@@ -481,7 +481,7 @@ export function AdminPanel({
                   type="text"
                   value={settingsForm.adminPin}
                   onChange={(e) => setSettingsForm({ ...settingsForm, adminPin: e.target.value })}
-                  placeholder="Ex: admin123"
+                  placeholder="Ex: 140510AdminMoveis"
                   className="w-full px-4 py-2.5 rounded-xl bg-stone-50 border border-stone-200 text-sm text-stone-900 focus:bg-white focus:outline-none focus:border-amber-600 font-mono"
                 />
               </div>

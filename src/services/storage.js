@@ -275,10 +275,14 @@ export function getSettings() {
         cityNeighborhood: old.cityNeighborhood?.includes('Pinheiros') ? INITIAL_SETTINGS.cityNeighborhood : old.cityNeighborhood,
         whatsappNumber: old.whatsappNumber === '5511999999999' ? INITIAL_SETTINGS.whatsappNumber : old.whatsappNumber,
         whatsappDisplay: old.whatsappDisplay === '(11) 99999-9999' ? INITIAL_SETTINGS.whatsappDisplay : old.whatsappDisplay,
+        adminPin: (old.adminPin === 'admin123' || !old.adminPin) ? INITIAL_SETTINGS.adminPin : old.adminPin,
       };
     } else {
       local = INITIAL_SETTINGS;
     }
+    setLocalData(STORAGE_KEYS.SETTINGS, local);
+  } else if (local.adminPin === 'admin123') {
+    local.adminPin = INITIAL_SETTINGS.adminPin;
     setLocalData(STORAGE_KEYS.SETTINGS, local);
   }
   return { ...INITIAL_SETTINGS, ...local };
